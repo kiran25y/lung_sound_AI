@@ -1,0 +1,77 @@
+# ── Hanil pipeline default config ────────────────────────────────────────────
+seed: 1337
+device: cuda            # cuda | cpu
+classes: [normal, crackle, wheeze]
+
+paths:
+  manifest: data/manifest.csv          # THE source of truth: one row per clip.
+                                       # hospital/device columns drive the splits.
+                                       # Build it with: python tools/build_manifest.py
+  noise_dir: data/noise/musan_noise    # MUSAN *noise* only. Used by exp1/exp3, NOT the baseline.
+  self_noise_dir: data/noise/self_recorded   # OPTIONAL — your own recordings. Omit if none.
+  desed_dir: data/noise/desed_synthetic      # OPTIONAL — only the Phase-2 noise detector.
+  out_dir: runs
+  # NOTE: there are NO per-hospital / per-device folder paths here by design.
+  # Where your wavs physically live is recorded per-clip in manifest.csv (filepath column).
+
+audio:
+  sample_rate: 16000
+  clip_seconds: 5.0
+
+# One portable front end. The ESP32 fixed-point front end must match these numbers.
+features:
+  type: logmel
+  n_fft: 400            # 25 ms @ 16 kHz
+  hop_length: 160       # 10 ms
+  win_length: 400
+  n_mels: 64
+  f_min: 50
+  f_max: 2000           # lung sounds live in 100–2000 Hz
+  log_offset: 1.0e-6
+
+# Noise-robust augmentation (Experiment 1)
+noise:
+  tier: shippable       # shippable | research  (guards commercial licensing)
+  enable: true
+  prob: 0.7             # fraction of training clips that get noise mixed in
+  snr_db: [5, 20]       # sample uniformly per clip/epoch
+  sources: [musan_noise, self_recorded]   # research tier may add: esc50, urbansound8k
+
+specaugment:
+  enable: true
+  freq_masks: 2
+  freq_mask_param: 8
+  time_masks: 2
+  time_mask_param: 16
+
+# Device-robust training (Experiment 2)
+device_robust:
+  mixstyle: {enable: true, p: 0.5, alpha: 0.3}
+  contrastive: {enable: true, weight: 0.5, temperature: 0.1}
+
+model:
+  arch: student_cnn     # student_cnn | mobilenetv3s | teacher_ast
+  student_width: 1.0    # scales params ~0.6M (0.75) .. ~1.2M (1.0)
+  dropout: 0.1
+
+distill:
+  enable: true
+  teacher_ckpt: runs/teacher_ast/best.pt
+  temperature: 4.0
+  alpha: 0.7            # weight on soft (teacher) loss vs hard labels
+
+train:
+  epochs: 80
+  batch_size: 32
+  lr: 3.0e-4
+  weight_decay: 1.0e-4
+  loss: focal           # focal | ce_balanced   (handles class imbalance)
+  focal_gamma: 2.0
+  class_weights: auto    # auto = inverse-frequency
+  num_workers: 4
+  amp: true
+  early_stop_patience: 12
+
+eval:
+  # Seoul held-out = internal; Sungbook = external (headline); smartphone = device test
+  report_splits: [internal_test, external_test, smartphone_test]

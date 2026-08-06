@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+runs/
+data/**/*.wav
+data_synth/
+*.onnx
+*.tflite
+saved_model/
+.venv/

@@ -1,0 +1,7 @@
+# Experiment 1 — Noise-robust training. Train clean stethoscope, test with injected noise.
+_base_: default.yaml
+experiment: noise_robust
+device_robust: {mixstyle: {enable: false}, contrastive: {enable: false}}
+distill: {enable: false}
+noise: {enable: true, prob: 0.8, snr_db: [5, 20]}
+eval: {report_splits: [internal_test, internal_test_noisy]}

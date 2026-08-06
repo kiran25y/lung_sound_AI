@@ -1,0 +1,9 @@
+# Experiment 3 — Final combined model. MixStyle + contrastive + noise + distillation.
+# Test = smartphone + injected noise (hardest, deployment-realistic).
+_base_: default.yaml
+experiment: final
+noise: {enable: true, prob: 0.7, snr_db: [5, 20]}
+device_robust: {mixstyle: {enable: true, p: 0.5, alpha: 0.3},
+                contrastive: {enable: true, weight: 0.5, temperature: 0.1}}
+distill: {enable: true, temperature: 4.0, alpha: 0.7}
+eval: {report_splits: [internal_test, external_test, smartphone_test, smartphone_test_noisy]}

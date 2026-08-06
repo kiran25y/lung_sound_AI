@@ -1,0 +1,8 @@
+# Experiment 2 — Device-robust training. Train stethoscope, test smartphone.
+_base_: default.yaml
+experiment: device_robust
+noise: {enable: false}
+device_robust: {mixstyle: {enable: true, p: 0.5, alpha: 0.3},
+                contrastive: {enable: true, weight: 0.5, temperature: 0.1}}
+distill: {enable: false}
+eval: {report_splits: [internal_test, smartphone_test]}

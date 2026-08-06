@@ -1,0 +1,8 @@
+# Cloud teacher — AST (AudioSet-pretrained). Never deployed; used to distil the student.
+_base_: default.yaml
+experiment: teacher
+model: {arch: teacher_ast}
+distill: {enable: false}
+device_robust: {mixstyle: {enable: false}, contrastive: {enable: true, weight: 0.3, temperature: 0.1}}
+noise: {enable: true, prob: 0.6, snr_db: [5, 20]}
+train: {epochs: 50, batch_size: 12, lr: 1.0e-5}

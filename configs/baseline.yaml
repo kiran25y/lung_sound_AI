@@ -1,0 +1,13 @@
+# ── STEP 1: baseline 3-class classifier ──────────────────────────────────────
+# Pure Normal/Crackle/Wheeze classifier. All robustness features OFF so you get a
+# clean baseline number FIRST. Once this trains and the confusion matrix looks
+# sane, move to exp1_noise -> exp2_device -> exp3_final to add robustness.
+_base_: default.yaml
+experiment: baseline
+noise: {enable: false}
+specaugment: {enable: true}                 # cheap, keep it even for baseline
+device_robust: {mixstyle: {enable: false}, contrastive: {enable: false}}
+distill: {enable: false}
+model: {arch: student_cnn, student_width: 1.0, dropout: 0.1}
+train: {epochs: 60, batch_size: 32, lr: 3.0e-4, loss: focal, class_weights: auto}
+eval: {report_splits: [internal_test, external_test, smartphone_test]}
