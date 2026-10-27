@@ -3,8 +3,10 @@ __pycache__/
 .pytest_cache/
 runs/
 data/**/*.wav
+data/manifest_local.csv
 data_synth/
 *.onnx
 *.tflite
+!firmware/**/*.tflite
 saved_model/
 .venv/

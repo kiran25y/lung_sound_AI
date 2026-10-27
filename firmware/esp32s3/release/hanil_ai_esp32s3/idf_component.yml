@@ -1,0 +1,8 @@
+version: "1.0.0"
+description: "Hanil lung-sound AI pipeline for ESP32-S3"
+targets:
+  - esp32s3
+dependencies:
+  idf: ">=6.0.0,<6.1.0"
+  espressif/esp-tflite-micro: "*"
+

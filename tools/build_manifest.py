@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build data/manifest.csv for the Hanil pipeline.
+r"""Build data/manifest.csv for the Hanil pipeline.
 
 The manifest is the single source of truth: one row per clip with columns
     filepath, patient_id, label, hospital, device

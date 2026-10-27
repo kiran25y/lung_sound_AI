@@ -168,7 +168,7 @@ def main():
     print(f"  test  rows : {len(te):>6}  ({te.hospital.iloc[0] if len(te) else '-'})")
     print(f"  TOTAL      : {len(man):>6}")
     print(f"  by label   : {dict(Counter(man.label))}")
-    print(f"  by hosp×dev: {dict(Counter(zip(man.hospital, man.device)))}")
+    print(f"  by hospital/device: {dict(Counter(zip(man.hospital, man.device)))}")
     print(f"  patients   : seoul={tr.patient_id.nunique()}  sungbook={te.patient_id.nunique()}")
     c = Counter(man.label); top = max(c.values()); tot = sum(c.values())
     print(f"  imbalance  : majority class = {100*top/tot:.0f}% of clips "
@@ -184,7 +184,7 @@ def main():
             print(f"      {p}")
         print("  -> add/adjust --path-replace so these resolve, then re-run.")
     else:
-        print(f"\n  ✓ all {len(man)} files found on disk.")
+        print(f"\n  [ok] all {len(man)} files found on disk.")
 
     if args.dry_run:
         print("\n[dry-run] nothing written.")

@@ -1,0 +1,42 @@
+# ESP-IDF generated files
+/build/
+/build_codex/
+/build_*/
+/managed_components/
+/sdkconfig
+/sdkconfig.old
+/tests/prebuilt_package_smoke/sdkconfig
+/tests/prebuilt_package_smoke/sdkconfig.old
+
+# Local tools and editors
+/.vscode/
+*.code-workspace
+**/__pycache__/
+*.py[cod]
+/.pytest_cache/
+/tools/.api_deps/
+/tools/.eval_deps/
+/tools/.serial_deps/
+/tools/serial_deps/
+/tools/.wsl_eval_venv/
+/tools/toolchain-shim/*.exe
+/.idf_python_bootstrap/
+/.idf_python_env/
+/.idf_pydeps/
+/comparison_evaluation/esp32_retest_payloads_*/
+
+# The previous public firmware was cloned only as a hardware reference.
+/previous_hanil_firmware/
+
+# Training outputs and private/local dataset manifests are not firmware source.
+/pipeline_source/hanil_lung_ai/runs/
+/pipeline_source/hanil_lung_ai/data/*
+!/pipeline_source/hanil_lung_ai/data/README.md
+
+# Common credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx

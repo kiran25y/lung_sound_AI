@@ -1,0 +1,2 @@
+# Host runtime for evaluating the exact INT8 TFLite model.
+ai-edge-litert==2.2.0

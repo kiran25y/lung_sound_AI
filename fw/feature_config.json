@@ -1,0 +1,22 @@
+{
+  "reference_impl": "torchaudio.transforms.MelSpectrogram + natural-log + per-clip norm",
+  "firmware_target": "ESP32-S3 / ESP-DSP FFT (mel in firmware, model takes log-Mel)",
+  "sample_rate": 16000,
+  "clip_seconds": 4.0,
+  "n_fft": 400,
+  "win_length": 400,
+  "hop_length": 160,
+  "window": "hann_periodic",
+  "center": true,
+  "pad_mode": "reflect",
+  "power": 2.0,
+  "n_mels": 64,
+  "f_min": 50.0,
+  "f_max": 2000.0,
+  "mel_scale": "slaney",
+  "mel_norm": "slaney",
+  "log_type": "ln",
+  "log_offset": 1e-06,
+  "normalize": "per_clip_meanstd",
+  "norm_eps": 1e-05
+}

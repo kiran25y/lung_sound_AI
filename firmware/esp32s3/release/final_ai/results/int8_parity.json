@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "thresholds": [
+    0.49,
+    0.28
+  ],
+  "temperature_scaling_applied": false,
+  "fp32": {
+    "per_head": {
+      "crackle": {
+        "se": 0.58,
+        "sp": 0.924,
+        "auroc": 0.816
+      },
+      "wheeze": {
+        "se": 0.829,
+        "sp": 0.656,
+        "auroc": 0.847
+      }
+    },
+    "two_class": {
+      "accuracy": 0.66,
+      "balanced_accuracy": 0.690730894881814,
+      "sensitivity": 0.746268656716418,
+      "specificity": 0.6351931330472103,
+      "tp": 50,
+      "fn": 17,
+      "tn": 148,
+      "fp": 85
+    },
+    "three_class": {
+      "accuracy": 0.6195652173913043,
+      "balanced_accuracy": 0.6084127939719962,
+      "macro_f1": 0.4510096685253527,
+      "excluded_both": 24,
+      "per_class": {
+        "normal": {
+          "precision": 0.9192546583850931,
+          "recall": 0.6351931330472103,
+          "f1": 0.751269035532995,
+          "support": 233
+        },
+        "crackle": {
+          "precision": 0.34782608695652173,
+          "recall": 0.3076923076923077,
+          "f1": 0.32653061224489793,
+          "support": 26
+        },
+        "wheeze": {
+          "precision": 0.16304347826086957,
+          "recall": 0.8823529411764706,
+          "f1": 0.27522935779816515,
+          "support": 17
+        }
+      },
+      "confusion_classes": [
+        "normal",
+        "crackle",
+        "wheeze"
+      ],
+      "confusion": [
+        [
+          148,
+          15,
+          70
+        ],
+        [
+          11,
+          8,
+          7
+        ],
+        [
+          2,
+          0,
+          15
+        ]
+      ]
+    }
+  },
+  "int8": {
+    "per_head": {
+      "crackle": {
+        "se": 0.58,
+        "sp": 0.928,
+        "auroc": 0.816
+      },
+      "wheeze": {
+        "se": 0.829,
+        "sp": 0.676,
+        "auroc": 0.85
+      }
+    },
+    "two_class": {
+      "accuracy": 0.6766666666666666,
+      "balanced_accuracy": 0.7014605086157197,
+      "sensitivity": 0.746268656716418,
+      "specificity": 0.6566523605150214,
+      "tp": 50,
+      "fn": 17,
+      "tn": 153,
+      "fp": 80
+    },
+    "three_class": {
+      "accuracy": 0.6413043478260869,
+      "balanced_accuracy": 0.6283863826151127,
+      "macro_f1": 0.4742419234900437,
+      "excluded_both": 24,
+      "per_class": {
+        "normal": {
+          "precision": 0.9216867469879518,
+          "recall": 0.6566523605150214,
+          "f1": 0.7669172932330827,
+          "support": 233
+        },
+        "crackle": {
+          "precision": 0.391304347826087,
+          "recall": 0.34615384615384615,
+          "f1": 0.36734693877551017,
+          "support": 26
+        },
+        "wheeze": {
+          "precision": 0.1724137931034483,
+          "recall": 0.8823529411764706,
+          "f1": 0.28846153846153844,
+          "support": 17
+        }
+      },
+      "confusion_classes": [
+        "normal",
+        "crackle",
+        "wheeze"
+      ],
+      "confusion": [
+        [
+          153,
+          14,
+          66
+        ],
+        [
+          11,
+          9,
+          6
+        ],
+        [
+          2,
+          0,
+          15
+        ]
+      ]
+    }
+  },
+  "mean_prob_gap": 0.008124460466206074,
+  "auroc_drops": {
+    "crackle": 0.0,
+    "wheeze": -0.0030000000000000027
+  },
+  "limits": {
+    "max_auroc_drop": 0.02,
+    "max_mean_prob_gap": 0.05
+  }
+}

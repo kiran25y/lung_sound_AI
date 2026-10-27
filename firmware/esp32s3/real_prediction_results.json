@@ -1,0 +1,106 @@
+{
+  "device": {
+    "chip": "ESP32-S3 rev 0.2",
+    "port": "COM4",
+    "cpu_mhz": 240,
+    "psram_mb": 8,
+    "firmware_sha256": "B40CA7FEC7F5132FDF191EB9331EFA5D0EA5B1CD3437005656CC99030F85A2F0"
+  },
+  "model": {
+    "sha256": "9A741A3D4182CDE9C5FCFFB55C1075CDB481B55ABFAD50989031AFC9FEE6CF50",
+    "input": "INT8 [1,64,401,1]",
+    "crackle_threshold": 0.45,
+    "wheeze_threshold": 0.5
+  },
+  "frontend": {
+    "input": "4.0 s mono PCM16 at 16 kHz",
+    "n_fft": 400,
+    "hop_length": 160,
+    "n_mels": 64,
+    "f_min_hz": 50,
+    "f_max_hz": 2000,
+    "mel_scale": "Slaney",
+    "log": "natural log with 1e-6 offset",
+    "normalization": "per-clip mean/std",
+    "typical_device_frontend_ms": 1608,
+    "typical_device_inference_ms": 2846
+  },
+  "parity": {
+    "clip": "162_8_AKGC417L.wav",
+    "differing_quantized_bytes": 4,
+    "total_quantized_bytes": 25664,
+    "differing_fraction": 0.00015586,
+    "max_quantized_step_gap": 1,
+    "mean_absolute_quantized_step_gap": 0.00015586,
+    "device_and_reference_output_bytes_match": true,
+    "probability_gap": {
+      "crackle": 0.0,
+      "wheeze": 0.0
+    }
+  },
+  "real_icbhi_predictions": [
+    {
+      "file": "162_8_AKGC417L.wav",
+      "ground_truth_state": "normal",
+      "p_crackle": 0.362247,
+      "p_wheeze": 0.410085,
+      "p_abnormal": 0.623780,
+      "predicted_state": "normal",
+      "four_state_match": true,
+      "basic_audio_quality": "pass"
+    },
+    {
+      "file": "162_20_AKGC417L.wav",
+      "ground_truth_state": "crackle",
+      "p_crackle": 0.637753,
+      "p_wheeze": 0.674197,
+      "p_abnormal": 0.881979,
+      "predicted_state": "both",
+      "four_state_match": false,
+      "basic_audio_quality": "pass"
+    },
+    {
+      "file": "116_1_Meditron.wav",
+      "ground_truth_state": "wheeze",
+      "p_crackle": 0.177224,
+      "p_wheeze": 0.134880,
+      "p_abnormal": 0.288201,
+      "predicted_state": "normal",
+      "four_state_match": false,
+      "basic_audio_quality": "pass"
+    },
+    {
+      "file": "162_4_AKGC417L.wav",
+      "ground_truth_state": "both",
+      "p_crackle": 0.708650,
+      "p_wheeze": 0.530264,
+      "p_abnormal": 0.863143,
+      "predicted_state": "both",
+      "four_state_match": true,
+      "basic_audio_quality": "pass"
+    }
+  ],
+  "live_microphone_test": {
+    "mapping": {
+      "ws_gpio": 1,
+      "bclk_gpio": 2,
+      "sd_gpio": 4,
+      "slot": "left"
+    },
+    "sample_rate_hz": 16000,
+    "capture_seconds": 6,
+    "classified_seconds": 4,
+    "peak_pcm16": 221,
+    "rms_pcm16": 23.3,
+    "peak_dbfs": -43.4,
+    "rms_dbfs": -63.0,
+    "gate": {
+      "decision": "retry",
+      "reason": "low_signal_quality",
+      "quality_score": 2.80,
+      "quality_min": 3.00
+    },
+    "interpretation": "Non-zero PCM confirms working I2S capture. The model was not invoked because this recording was too weak to pass the quality gate."
+  },
+  "interpretation": "These are acoustic model outputs on real ICBHI lung-sound clips, not a clinical diagnosis. Four clips are a pipeline smoke test, not an accuracy estimate."
+}

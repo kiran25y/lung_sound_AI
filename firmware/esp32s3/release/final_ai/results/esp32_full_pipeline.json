@@ -1,0 +1,1727 @@
+{
+  "tested_at": "2026-09-22T18:47:27.379589+09:00",
+  "board": "ESP32-S3 240 MHz, 16 MB flash, 8 MB octal PSRAM",
+  "firmware": "student_pipeline_sram",
+  "runtime": "portable TFLM INT8",
+  "labeled_samples": [
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000156,
+        "rms": 0.217403,
+        "flatness": 5.4e-05,
+        "zcr": 0.004938,
+        "quality": 13.38,
+        "gate_ms": 971.247,
+        "frontend_ms": 203.151,
+        "preprocess_ms": 1174.398
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.169494,
+        "p_wheeze": 0.135394,
+        "p_abnormal": 0.28194,
+        "class2": "normal",
+        "class3": "normal",
+        "latency_ms": 2110.3,
+        "qhash": "2ba3c5be",
+        "out_q": "[-32,-39]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.151,
+        "gate_ms": 971.247,
+        "quantize_ms": 21.463,
+        "inference_ms": 2110.298,
+        "compute_ms": 3311.469,
+        "end_to_end_ms": 3319.722
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50134)2-9-N.wav",
+      "label": "N",
+      "truth2": "normal",
+      "truth3": "normal",
+      "correct2": true,
+      "correct3": true,
+      "parity": {
+        "host_input_qhash": "2ba3c5be",
+        "esp_input_qhash": "2ba3c5be",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          -32,
+          -39
+        ],
+        "esp_out_q": [
+          -32,
+          -39
+        ],
+        "output_int8_exact": true,
+        "host_class2": "normal",
+        "host_class3": "normal",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000594,
+        "rms": 0.178804,
+        "flatness": 0.000106,
+        "zcr": 0.006,
+        "quality": 11.6,
+        "gate_ms": 971.257,
+        "frontend_ms": 203.218,
+        "preprocess_ms": 1174.475
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.023067,
+        "p_wheeze": 0.027738,
+        "p_abnormal": 0.050166,
+        "class2": "normal",
+        "class3": "normal",
+        "latency_ms": 2110.29,
+        "qhash": "7bac0919",
+        "out_q": "[-89,-84]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.218,
+        "gate_ms": 971.257,
+        "quantize_ms": 21.465,
+        "inference_ms": 2110.288,
+        "compute_ms": 3311.501,
+        "end_to_end_ms": 3319.75
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50134)2-8-N.wav",
+      "label": "N",
+      "truth2": "normal",
+      "truth3": "normal",
+      "correct2": true,
+      "correct3": true,
+      "parity": {
+        "host_input_qhash": "7bac0919",
+        "esp_input_qhash": "7bac0919",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          -89,
+          -84
+        ],
+        "esp_out_q": [
+          -89,
+          -84
+        ],
+        "output_int8_exact": true,
+        "host_class2": "normal",
+        "host_class3": "normal",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000156,
+        "rms": 0.146729,
+        "flatness": 0.000336,
+        "zcr": 0.005363,
+        "quality": 18.02,
+        "gate_ms": 971.202,
+        "frontend_ms": 203.184,
+        "preprocess_ms": 1174.386
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.061551,
+        "p_wheeze": 0.044578,
+        "p_abnormal": 0.103385,
+        "class2": "normal",
+        "class3": "normal",
+        "latency_ms": 2110.28,
+        "qhash": "6a561b40",
+        "out_q": "[-62,-71]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.184,
+        "gate_ms": 971.202,
+        "quantize_ms": 21.475,
+        "inference_ms": 2110.282,
+        "compute_ms": 3311.541,
+        "end_to_end_ms": 3319.931
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50134)2-7-N.wav",
+      "label": "N",
+      "truth2": "normal",
+      "truth3": "normal",
+      "correct2": true,
+      "correct3": true,
+      "parity": {
+        "host_input_qhash": "5f706bc0",
+        "esp_input_qhash": "6a561b40",
+        "frontend_qhash_exact": false,
+        "host_out_q": [
+          -62,
+          -71
+        ],
+        "esp_out_q": [
+          -62,
+          -71
+        ],
+        "output_int8_exact": true,
+        "host_class2": "normal",
+        "host_class3": "normal",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000516,
+        "rms": 0.159315,
+        "flatness": 0.00019,
+        "zcr": 0.005356,
+        "quality": 14.27,
+        "gate_ms": 971.067,
+        "frontend_ms": 203.225,
+        "preprocess_ms": 1174.292
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.053367,
+        "p_wheeze": 0.044578,
+        "p_abnormal": 0.095566,
+        "class2": "normal",
+        "class3": "normal",
+        "latency_ms": 2110.29,
+        "qhash": "78c3d992",
+        "out_q": "[-66,-71]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.225,
+        "gate_ms": 971.067,
+        "quantize_ms": 21.465,
+        "inference_ms": 2110.292,
+        "compute_ms": 3311.428,
+        "end_to_end_ms": 3319.83
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50134)2-6-N.wav",
+      "label": "N",
+      "truth2": "normal",
+      "truth3": "normal",
+      "correct2": true,
+      "correct3": true,
+      "parity": {
+        "host_input_qhash": "78c3d992",
+        "esp_input_qhash": "78c3d992",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          -66,
+          -71
+        ],
+        "esp_out_q": [
+          -66,
+          -71
+        ],
+        "output_int8_exact": true,
+        "host_class2": "normal",
+        "host_class3": "normal",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.00025,
+        "rms": 0.192752,
+        "flatness": 0.000118,
+        "zcr": 0.005325,
+        "quality": 16.87,
+        "gate_ms": 971.18,
+        "frontend_ms": 203.219,
+        "preprocess_ms": 1174.399
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.169494,
+        "p_wheeze": 0.210096,
+        "p_abnormal": 0.34398,
+        "class2": "normal",
+        "class3": "normal",
+        "latency_ms": 2110.29,
+        "qhash": "701b31eb",
+        "out_q": "[-32,-25]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.219,
+        "gate_ms": 971.18,
+        "quantize_ms": 21.466,
+        "inference_ms": 2110.286,
+        "compute_ms": 3311.552,
+        "end_to_end_ms": 3319.94
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50134)2-5-N.wav",
+      "label": "N",
+      "truth2": "normal",
+      "truth3": "normal",
+      "correct2": true,
+      "correct3": true,
+      "parity": {
+        "host_input_qhash": "701b31eb",
+        "esp_input_qhash": "701b31eb",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          -32,
+          -25
+        ],
+        "esp_out_q": [
+          -32,
+          -25
+        ],
+        "output_int8_exact": true,
+        "host_class2": "normal",
+        "host_class3": "normal",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000156,
+        "rms": 0.1771,
+        "flatness": 0.000296,
+        "zcr": 0.004694,
+        "quality": 26.21,
+        "gate_ms": 971.266,
+        "frontend_ms": 203.208,
+        "preprocess_ms": 1174.474
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.361796,
+        "p_wheeze": 0.336018,
+        "p_abnormal": 0.576244,
+        "class2": "abnormal",
+        "class3": "wheeze",
+        "latency_ms": 2110.28,
+        "qhash": "24361046",
+        "out_q": "[-5,-8]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.208,
+        "gate_ms": 971.266,
+        "quantize_ms": 21.475,
+        "inference_ms": 2110.278,
+        "compute_ms": 3311.612,
+        "end_to_end_ms": 3320.015
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50129)2-8-C.wav",
+      "label": "C",
+      "truth2": "abnormal",
+      "truth3": "crackle",
+      "correct2": true,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "fe605669",
+        "esp_input_qhash": "24361046",
+        "frontend_qhash_exact": false,
+        "host_out_q": [
+          -5,
+          -8
+        ],
+        "esp_out_q": [
+          -5,
+          -8
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "wheeze",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000234,
+        "rms": 0.164833,
+        "flatness": 0.00013,
+        "zcr": 0.0047,
+        "quality": 25.71,
+        "gate_ms": 971.492,
+        "frontend_ms": 203.22,
+        "preprocess_ms": 1174.712
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.720302,
+        "p_wheeze": 0.059401,
+        "p_abnormal": 0.736917,
+        "class2": "abnormal",
+        "class3": "crackle",
+        "latency_ms": 2110.28,
+        "qhash": "86566aad",
+        "out_q": "[35,-63]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.22,
+        "gate_ms": 971.492,
+        "quantize_ms": 21.461,
+        "inference_ms": 2110.278,
+        "compute_ms": 3311.857,
+        "end_to_end_ms": 3320.424
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50129)2-7-C.wav",
+      "label": "C",
+      "truth2": "abnormal",
+      "truth3": "crackle",
+      "correct2": true,
+      "correct3": true,
+      "parity": {
+        "host_input_qhash": "86566aad",
+        "esp_input_qhash": "86566aad",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          35,
+          -63
+        ],
+        "esp_out_q": [
+          35,
+          -63
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "crackle",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000219,
+        "rms": 0.208668,
+        "flatness": 0.001207,
+        "zcr": 0.004844,
+        "quality": 26.75,
+        "gate_ms": 971.462,
+        "frontend_ms": 203.249,
+        "preprocess_ms": 1174.711
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.629422,
+        "p_wheeze": 0.03718,
+        "p_abnormal": 0.6432,
+        "class2": "abnormal",
+        "class3": "crackle",
+        "latency_ms": 2110.29,
+        "qhash": "2565232f",
+        "out_q": "[24,-76]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.249,
+        "gate_ms": 971.462,
+        "quantize_ms": 21.451,
+        "inference_ms": 2110.289,
+        "compute_ms": 3311.835,
+        "end_to_end_ms": 3320.416
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50129)2-4-C.wav",
+      "label": "C",
+      "truth2": "abnormal",
+      "truth3": "crackle",
+      "correct2": true,
+      "correct3": true,
+      "parity": {
+        "host_input_qhash": "2565232f",
+        "esp_input_qhash": "2565232f",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          24,
+          -76
+        ],
+        "esp_out_q": [
+          24,
+          -76
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "crackle",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000297,
+        "rms": 0.193737,
+        "flatness": 0.000191,
+        "zcr": 0.005081,
+        "quality": 24.88,
+        "gate_ms": 971.409,
+        "frontend_ms": 203.217,
+        "preprocess_ms": 1174.626
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.986791,
+        "p_wheeze": 0.74259,
+        "p_abnormal": 0.9966,
+        "class2": "abnormal",
+        "class3": "crackle",
+        "latency_ms": 2110.28,
+        "qhash": "7a19f1c2",
+        "out_q": "[124,38]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.217,
+        "gate_ms": 971.409,
+        "quantize_ms": 21.461,
+        "inference_ms": 2110.281,
+        "compute_ms": 3311.763,
+        "end_to_end_ms": 3320.335
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50129)2-3-C.wav",
+      "label": "C",
+      "truth2": "abnormal",
+      "truth3": "crackle",
+      "correct2": true,
+      "correct3": true,
+      "parity": {
+        "host_input_qhash": "7a19f1c2",
+        "esp_input_qhash": "7a19f1c2",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          124,
+          38
+        ],
+        "esp_out_q": [
+          124,
+          38
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "crackle",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000297,
+        "rms": 0.196328,
+        "flatness": 0.000106,
+        "zcr": 0.005788,
+        "quality": 18.12,
+        "gate_ms": 970.989,
+        "frontend_ms": 203.183,
+        "preprocess_ms": 1174.172
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.180415,
+        "p_wheeze": 0.081536,
+        "p_abnormal": 0.247241,
+        "class2": "normal",
+        "class3": "normal",
+        "latency_ms": 2110.28,
+        "qhash": "37d3d7d8",
+        "out_q": "[-30,-54]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.183,
+        "gate_ms": 970.989,
+        "quantize_ms": 21.449,
+        "inference_ms": 2110.284,
+        "compute_ms": 3311.286,
+        "end_to_end_ms": 3319.683
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50129)1-5-C.wav",
+      "label": "C",
+      "truth2": "abnormal",
+      "truth3": "crackle",
+      "correct2": false,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "37d3d7d8",
+        "esp_input_qhash": "37d3d7d8",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          -30,
+          -54
+        ],
+        "esp_out_q": [
+          -30,
+          -54
+        ],
+        "output_int8_exact": true,
+        "host_class2": "normal",
+        "host_class3": "normal",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000297,
+        "rms": 0.18258,
+        "flatness": 4.4e-05,
+        "zcr": 0.004588,
+        "quality": 24.83,
+        "gate_ms": 971.512,
+        "frontend_ms": 203.156,
+        "preprocess_ms": 1174.668
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.100234,
+        "p_wheeze": 0.061551,
+        "p_abnormal": 0.155615,
+        "class2": "normal",
+        "class3": "normal",
+        "latency_ms": 2110.28,
+        "qhash": "5dd195e6",
+        "out_q": "[-48,-62]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.156,
+        "gate_ms": 971.512,
+        "quantize_ms": 21.476,
+        "inference_ms": 2110.285,
+        "compute_ms": 3311.833,
+        "end_to_end_ms": 3320.223
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50129)2-6-W.wav",
+      "label": "W",
+      "truth2": "abnormal",
+      "truth3": "wheeze",
+      "correct2": false,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "5dd195e6",
+        "esp_input_qhash": "5dd195e6",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          -48,
+          -62
+        ],
+        "esp_out_q": [
+          -48,
+          -62
+        ],
+        "output_int8_exact": true,
+        "host_class2": "normal",
+        "host_class3": "normal",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.00025,
+        "rms": 0.161089,
+        "flatness": 5.3e-05,
+        "zcr": 0.005588,
+        "quality": 25.31,
+        "gate_ms": 971.401,
+        "frontend_ms": 203.177,
+        "preprocess_ms": 1174.578
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.903128,
+        "p_wheeze": 0.712616,
+        "p_abnormal": 0.97216,
+        "class2": "abnormal",
+        "class3": "crackle",
+        "latency_ms": 2110.28,
+        "qhash": "ab496e83",
+        "out_q": "[69,34]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.177,
+        "gate_ms": 971.401,
+        "quantize_ms": 21.458,
+        "inference_ms": 2110.28,
+        "compute_ms": 3311.709,
+        "end_to_end_ms": 3320.201
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50129)2-2-W.wav",
+      "label": "W",
+      "truth2": "abnormal",
+      "truth3": "wheeze",
+      "correct2": true,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "ab496e83",
+        "esp_input_qhash": "ab496e83",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          69,
+          34
+        ],
+        "esp_out_q": [
+          69,
+          34
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "crackle",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000188,
+        "rms": 0.194321,
+        "flatness": 0.000122,
+        "zcr": 0.009888,
+        "quality": 19.74,
+        "gate_ms": 971.227,
+        "frontend_ms": 203.162,
+        "preprocess_ms": 1174.389
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.958536,
+        "p_wheeze": 0.749757,
+        "p_abnormal": 0.989624,
+        "class2": "abnormal",
+        "class3": "crackle",
+        "latency_ms": 2110.29,
+        "qhash": "5bc4645c",
+        "out_q": "[93,39]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.162,
+        "gate_ms": 971.227,
+        "quantize_ms": 21.451,
+        "inference_ms": 2110.287,
+        "compute_ms": 3311.517,
+        "end_to_end_ms": 3319.991
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50124)2-8-W.wav",
+      "label": "W",
+      "truth2": "abnormal",
+      "truth3": "wheeze",
+      "correct2": true,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "729479dd",
+        "esp_input_qhash": "5bc4645c",
+        "frontend_qhash_exact": false,
+        "host_out_q": [
+          92,
+          38
+        ],
+        "esp_out_q": [
+          93,
+          39
+        ],
+        "output_int8_exact": false,
+        "host_class2": "abnormal",
+        "host_class3": "crackle",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000219,
+        "rms": 0.212364,
+        "flatness": 4.1e-05,
+        "zcr": 0.010488,
+        "quality": 19.74,
+        "gate_ms": 971.455,
+        "frontend_ms": 203.17,
+        "preprocess_ms": 1174.625
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.946633,
+        "p_wheeze": 0.868975,
+        "p_abnormal": 0.993008,
+        "class2": "abnormal",
+        "class3": "crackle",
+        "latency_ms": 2110.28,
+        "qhash": "d0211d7b",
+        "out_q": "[86,60]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.17,
+        "gate_ms": 971.455,
+        "quantize_ms": 21.449,
+        "inference_ms": 2110.285,
+        "compute_ms": 3311.749,
+        "end_to_end_ms": 3320.246
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50124)2-7-W.wav",
+      "label": "W",
+      "truth2": "abnormal",
+      "truth3": "wheeze",
+      "correct2": true,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "d0211d7b",
+        "esp_input_qhash": "d0211d7b",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          86,
+          60
+        ],
+        "esp_out_q": [
+          86,
+          60
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "crackle",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000219,
+        "rms": 0.201648,
+        "flatness": 1.7e-05,
+        "zcr": 0.017263,
+        "quality": 19.96,
+        "gate_ms": 971.255,
+        "frontend_ms": 203.164,
+        "preprocess_ms": 1174.419
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.169494,
+        "p_wheeze": 0.958536,
+        "p_abnormal": 0.965564,
+        "class2": "abnormal",
+        "class3": "wheeze",
+        "latency_ms": 2110.28,
+        "qhash": "a0afb676",
+        "out_q": "[-32,93]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.164,
+        "gate_ms": 971.255,
+        "quantize_ms": 21.433,
+        "inference_ms": 2110.281,
+        "compute_ms": 3311.538,
+        "end_to_end_ms": 3319.937
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50124)2-10-W.wav",
+      "label": "W",
+      "truth2": "abnormal",
+      "truth3": "wheeze",
+      "correct2": true,
+      "correct3": true,
+      "parity": {
+        "host_input_qhash": "a0afb676",
+        "esp_input_qhash": "a0afb676",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          -32,
+          93
+        ],
+        "esp_out_q": [
+          -32,
+          93
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "wheeze",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000469,
+        "rms": 0.21448,
+        "flatness": 1.5e-05,
+        "zcr": 0.009694,
+        "quality": 22.32,
+        "gate_ms": 971.376,
+        "frontend_ms": 203.158,
+        "preprocess_ms": 1174.534
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.96282,
+        "p_wheeze": 0.965436,
+        "p_abnormal": 0.998715,
+        "class2": "abnormal",
+        "class3": "wheeze",
+        "latency_ms": 2110.28,
+        "qhash": "41d2f535",
+        "out_q": "[96,98]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.158,
+        "gate_ms": 971.376,
+        "quantize_ms": 21.449,
+        "inference_ms": 2110.285,
+        "compute_ms": 3311.653,
+        "end_to_end_ms": 3320.051
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50124)2-9-B.wav",
+      "label": "B",
+      "truth2": "abnormal",
+      "truth3": null,
+      "correct2": true,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "41d2f535",
+        "esp_input_qhash": "41d2f535",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          96,
+          98
+        ],
+        "esp_out_q": [
+          96,
+          98
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "wheeze",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 7.8e-05,
+        "rms": 0.182577,
+        "flatness": 0.000161,
+        "zcr": 0.009894,
+        "quality": 22.82,
+        "gate_ms": 971.162,
+        "frontend_ms": 203.171,
+        "preprocess_ms": 1174.333
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.868975,
+        "p_wheeze": 0.8555,
+        "p_abnormal": 0.981067,
+        "class2": "abnormal",
+        "class3": "crackle",
+        "latency_ms": 2110.28,
+        "qhash": "bdce65f3",
+        "out_q": "[60,57]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.171,
+        "gate_ms": 971.162,
+        "quantize_ms": 21.455,
+        "inference_ms": 2110.285,
+        "compute_ms": 3311.484,
+        "end_to_end_ms": 3319.963
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50124)2-6-B.wav",
+      "label": "B",
+      "truth2": "abnormal",
+      "truth3": null,
+      "correct2": true,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "bdce65f3",
+        "esp_input_qhash": "bdce65f3",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          60,
+          57
+        ],
+        "esp_out_q": [
+          60,
+          57
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "crackle",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000188,
+        "rms": 0.214132,
+        "flatness": 3.3e-05,
+        "zcr": 0.008969,
+        "quality": 23.12,
+        "gate_ms": 971.219,
+        "frontend_ms": 203.147,
+        "preprocess_ms": 1174.366
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.31118,
+        "p_wheeze": 0.819585,
+        "p_abnormal": 0.875727,
+        "class2": "abnormal",
+        "class3": "wheeze",
+        "latency_ms": 2110.28,
+        "qhash": "0f5711db",
+        "out_q": "[-11,50]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.147,
+        "gate_ms": 971.219,
+        "quantize_ms": 21.451,
+        "inference_ms": 2110.282,
+        "compute_ms": 3311.484,
+        "end_to_end_ms": 3319.979
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50124)2-5-B.wav",
+      "label": "B",
+      "truth2": "abnormal",
+      "truth3": null,
+      "correct2": true,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "0f5711db",
+        "esp_input_qhash": "0f5711db",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          -11,
+          50
+        ],
+        "esp_out_q": [
+          -11,
+          50
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "wheeze",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.000234,
+        "rms": 0.21934,
+        "flatness": 6e-06,
+        "zcr": 0.008988,
+        "quality": 20.4,
+        "gate_ms": 971.354,
+        "frontend_ms": 203.204,
+        "preprocess_ms": 1174.558
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.958536,
+        "p_wheeze": 0.868975,
+        "p_abnormal": 0.994567,
+        "class2": "abnormal",
+        "class3": "crackle",
+        "latency_ms": 2110.29,
+        "qhash": "92cf741b",
+        "out_q": "[93,60]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.204,
+        "gate_ms": 971.354,
+        "quantize_ms": 21.432,
+        "inference_ms": 2110.287,
+        "compute_ms": 3311.674,
+        "end_to_end_ms": 3320.148
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50124)2-3-B.wav",
+      "label": "B",
+      "truth2": "abnormal",
+      "truth3": null,
+      "correct2": true,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "92cf741b",
+        "esp_input_qhash": "92cf741b",
+        "frontend_qhash_exact": true,
+        "host_out_q": [
+          93,
+          60
+        ],
+        "esp_out_q": [
+          93,
+          60
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "crackle",
+        "decision_exact": true
+      }
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "PASS",
+        "reason": "pass",
+        "clip_frac": 0.00025,
+        "rms": 0.203815,
+        "flatness": 6.2e-05,
+        "zcr": 0.010088,
+        "quality": 21.68,
+        "gate_ms": 971.432,
+        "frontend_ms": 203.165,
+        "preprocess_ms": 1174.597
+      },
+      "result": {
+        "source": "on_device_pcm",
+        "p_crackle": 0.980833,
+        "p_wheeze": 0.988192,
+        "p_abnormal": 0.999774,
+        "class2": "abnormal",
+        "class3": "wheeze",
+        "latency_ms": 2110.29,
+        "qhash": "d427b7bc",
+        "out_q": "[114,127]"
+      },
+      "decision": "pass",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "PASS",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.165,
+        "gate_ms": 971.432,
+        "quantize_ms": 21.434,
+        "inference_ms": 2110.286,
+        "compute_ms": 3311.702,
+        "end_to_end_ms": 3320.28
+      },
+      "memory_after": {
+        "stage": "after_command",
+        "internal_free": 41659,
+        "internal_largest": 23552,
+        "internal_minimum_free": 41659,
+        "internal_total": 416459,
+        "psram_free": 7767264,
+        "psram_largest": 7733248,
+        "psram_total": 8388608
+      },
+      "wav": "50124)2-2-B.wav",
+      "label": "B",
+      "truth2": "abnormal",
+      "truth3": null,
+      "correct2": true,
+      "correct3": false,
+      "parity": {
+        "host_input_qhash": "1af911ad",
+        "esp_input_qhash": "d427b7bc",
+        "frontend_qhash_exact": false,
+        "host_out_q": [
+          114,
+          127
+        ],
+        "esp_out_q": [
+          114,
+          127
+        ],
+        "output_int8_exact": true,
+        "host_class2": "abnormal",
+        "host_class3": "wheeze",
+        "decision_exact": true
+      }
+    }
+  ],
+  "synthetic_gate_tests": [
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "RETRY",
+        "reason": "silence_no_contact",
+        "clip_frac": 0.0,
+        "rms": 0.0,
+        "flatness": 0.990099,
+        "zcr": 0.0,
+        "quality": -90.0,
+        "gate_ms": 940.396,
+        "frontend_ms": 203.144,
+        "preprocess_ms": 1143.54
+      },
+      "decision": "retry",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "RETRY",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.144,
+        "gate_ms": 940.396,
+        "quantize_ms": 0.0,
+        "inference_ms": -1.0,
+        "compute_ms": 1143.54,
+        "end_to_end_ms": 1156.078
+      },
+      "name": "silence"
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "RETRY",
+        "reason": "noise_rustle",
+        "clip_frac": 0.010422,
+        "rms": 0.577138,
+        "flatness": 0.562127,
+        "zcr": 0.502159,
+        "quality": 2.92,
+        "gate_ms": 966.756,
+        "frontend_ms": 203.011,
+        "preprocess_ms": 1169.767
+      },
+      "decision": "retry",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "RETRY",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.011,
+        "gate_ms": 966.756,
+        "quantize_ms": 0.0,
+        "inference_ms": -1.0,
+        "compute_ms": 1169.767,
+        "end_to_end_ms": 1181.154
+      },
+      "name": "white_noise"
+    },
+    {
+      "command": "PCM1",
+      "payload_bytes": 128000,
+      "gate": {
+        "decision": "RETRY",
+        "reason": "clipping_saturation",
+        "clip_frac": 1.0,
+        "rms": 0.999985,
+        "flatness": 0.000125,
+        "zcr": 0.047619,
+        "quality": 0.0,
+        "gate_ms": 986.541,
+        "frontend_ms": 203.3,
+        "preprocess_ms": 1189.841
+      },
+      "decision": "retry",
+      "timing": {
+        "source": "on_device_pcm",
+        "status": "RETRY",
+        "capture_ms": 0.0,
+        "frontend_ms": 203.3,
+        "gate_ms": 986.541,
+        "quantize_ms": 0.0,
+        "inference_ms": -1.0,
+        "compute_ms": 1189.841,
+        "end_to_end_ms": 1202.44
+      },
+      "name": "clipped_square"
+    }
+  ],
+  "boot": {
+    "memory": [
+      {
+        "stage": "boot",
+        "internal_free": "386931",
+        "internal_largest": "319488",
+        "internal_minimum_free": "386931",
+        "internal_total": "416459",
+        "psram_free": "8386308",
+        "psram_largest": "8257536",
+        "psram_total": "8388608"
+      },
+      {
+        "stage": "model_copied",
+        "internal_free": "198799",
+        "internal_largest": "135168",
+        "internal_minimum_free": "198799",
+        "internal_total": "416459",
+        "psram_free": "8386308",
+        "psram_largest": "8257536",
+        "psram_total": "8388608"
+      },
+      {
+        "stage": "arena_allocated",
+        "internal_free": "77963",
+        "internal_largest": "31744",
+        "internal_minimum_free": "77963",
+        "internal_total": "416459",
+        "psram_free": "8386308",
+        "psram_largest": "8257536",
+        "psram_total": "8388608"
+      },
+      {
+        "stage": "tensors_ready",
+        "internal_free": "77787",
+        "internal_largest": "31744",
+        "internal_minimum_free": "77787",
+        "internal_total": "416459",
+        "psram_free": "8386308",
+        "psram_largest": "8257536",
+        "psram_total": "8388608"
+      },
+      {
+        "stage": "frontend_ready",
+        "internal_free": "65191",
+        "internal_largest": "31744",
+        "internal_minimum_free": "65191",
+        "internal_total": "416459",
+        "psram_free": "7767800",
+        "psram_largest": "7733248",
+        "psram_total": "8388608"
+      },
+      {
+        "stage": "microphone_ready",
+        "internal_free": "51431",
+        "internal_largest": "31744",
+        "internal_minimum_free": "51431",
+        "internal_total": "416459",
+        "psram_free": "7767264",
+        "psram_largest": "7733248",
+        "psram_total": "8388608"
+      },
+      {
+        "stage": "usb_ready",
+        "internal_free": "41659",
+        "internal_largest": "23552",
+        "internal_minimum_free": "41659",
+        "internal_total": "416459",
+        "psram_free": "7767264",
+        "psram_largest": "7733248",
+        "psram_total": "8388608"
+      }
+    ],
+    "model": {
+      "input": "[1,64,401,1]",
+      "input_scale": "0.0510409623",
+      "input_zp": "5",
+      "output_scale": "0.0378384441",
+      "output_zp": "10",
+      "arena_used_bytes": "117132",
+      "arena_used_kib": "114.39",
+      "arena_internal": "yes",
+      "model_runtime": "internal_sram",
+      "kernel_backend": "tflm_portable_int8_static_shapes"
+    },
+    "gate_memory": {
+      "mutable_bytes": "4128",
+      "address": "0x3fcebb30",
+      "location": "internal_sram",
+      "internal": "yes",
+      "band_energy_bytes": "2048",
+      "sort_workspace_bytes": "2048"
+    },
+    "frontend_memory": {
+      "pcm_psram": "128000",
+      "logmel_psram": "102656",
+      "mic_recording_psram": "384000",
+      "frame_internal": "1600",
+      "power_internal": "804",
+      "spectrum_internal": "1608"
+    },
+    "ready": {
+      "build": "student_pipeline_sram",
+      "MIC1": "live_6s_crop4s",
+      "mic_ready": "yes",
+      "PCM1": "128000_bytes",
+      "FEA1": "25664_bytes",
+      "CMP1": "25664_bytes",
+      "thresholds": "[0.49,0.28]"
+    }
+  },
+  "live_microphone": {
+    "command": "MIC1",
+    "payload_bytes": 0,
+    "gate": {
+      "decision": "RETRY",
+      "reason": "poor_chest_contact",
+      "clip_frac": 0.0,
+      "rms": 0.0,
+      "flatness": 0.0,
+      "zcr": 0.0,
+      "quality": -90.0,
+      "gate_ms": 0.0,
+      "frontend_ms": 0.0,
+      "preprocess_ms": 0.0
+    },
+    "decision": "retry",
+    "timing": {
+      "source": "live_i2s",
+      "status": "RETRY",
+      "capture_ms": 6369.449,
+      "frontend_ms": 0.0,
+      "gate_ms": 0.0,
+      "quantize_ms": 0.0,
+      "inference_ms": -1.0,
+      "compute_ms": 0.0,
+      "end_to_end_ms": 6392.277
+    }
+  },
+  "summary": {
+    "samples": 20,
+    "passed": 20,
+    "retried": 0,
+    "pass_rate": 1.0,
+    "two_class_accuracy_all": 0.9,
+    "two_class_accuracy_passed": 0.9,
+    "three_class_accuracy_excluding_both": 0.6,
+    "parity": {
+      "frontend_qhash_exact": 16,
+      "output_int8_exact": 19,
+      "decision_exact": 20,
+      "samples": 20
+    },
+    "frontend_ms": {
+      "mean": 203.18739999999997,
+      "median": 203.18,
+      "min": 203.147,
+      "max": 203.249
+    },
+    "gate_ms": {
+      "mean": 971.2982,
+      "median": 971.2615,
+      "min": 970.989,
+      "max": 971.512
+    },
+    "quantize_ms": {
+      "mean": 21.45595,
+      "median": 21.4565,
+      "min": 21.432,
+      "max": 21.476
+    },
+    "inference_ms": {
+      "mean": 2110.2849499999998,
+      "median": 2110.285,
+      "min": 2110.278,
+      "max": 2110.298
+    },
+    "compute_ms": {
+      "mean": 3311.6093499999997,
+      "median": 3311.5820000000003,
+      "min": 3311.286,
+      "max": 3311.857
+    },
+    "end_to_end_ms": {
+      "mean": 3320.053250000001,
+      "median": 3320.0029999999997,
+      "min": 3319.683,
+      "max": 3320.424
+    }
+  }
+}
