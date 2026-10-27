@@ -7,7 +7,7 @@ and smartphone recordings, robust to noise and device shift, and deployable to *
 > documentation of the whole pipeline (philosophy, every phase, runbook, config reference,
 > targets, licensing, troubleshooting). This README is the quick version.
 
-Built for the Medisensing / BrAInLab research program. Trains in **PyTorch**; ships an INT8
+Trains in **PyTorch**; ships an INT8
 **TFLite** student model to the ESP32-S3 via ONNX -> TensorFlow -> TFLite.
 
 ## Complete training and firmware repository
@@ -34,13 +34,6 @@ The final model outputs `normal/abnormal` and
 used as a clinical diagnosis without the required validation and regulatory
 process.
 
-```
-Seoul (internal steth)  ─┐
-Sungbook (external steth)─┼─► Phase 1  ─► Phase 2 ─► Phase 3 ─► Phase 4
-Smartphone (both)        ─┘   classify     quality    bench      ESP32
-MUSAN noise (aug)             + robust     control     mark       INT8
-DESED_synthetic (detect)
-```
 
 ## Phase map (matches the project spec)
 
