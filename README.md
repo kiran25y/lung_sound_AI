@@ -1,4 +1,4 @@
-# Hanil Lung-Sound AI Pipeline
+# Lung-Sound AI Pipeline
 
 End-to-end pipeline for **Normal / Crackle / Wheeze** classification from digital-stethoscope
 and smartphone recordings, robust to noise and device shift, and deployable to **ESP32-S3**.
